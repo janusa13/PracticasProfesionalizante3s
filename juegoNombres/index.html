@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Ordenar</title>
+    <style>
+      #listaNombres {
+        list-style-type: none;
+      }
+      #nombresOrdenados {
+        border: 1px solid #ccc;
+        min-height: 100px;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      .nombre {
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Nombres para Ordenar</h2>
+    <ul id="listaNombres"></ul>
+
+    <h2>Nombres Ordenados</h2>
+    <div
+      id="nombresOrdenados"
+      ondrop="soltar(event)"
+      ondragover="permitirSoltar(event)"
+    ></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
